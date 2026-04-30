@@ -15,11 +15,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Tagline */}
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <span className="text-2xl" role="img" aria-label="monkey">🐒</span>
-              <span className="font-display text-lg text-monkey-yellow tracking-wider">
-                MONKEY FITNESS
-              </span>
+            <Link to="/" className="inline-flex items-center mb-4">
+              <img
+                src="/images/logo.png"
+                alt="Monkey Fitness logo"
+                className="h-14 w-auto object-contain"
+              />
             </Link>
             <p className="text-monkey-muted text-sm font-body">
               Train Hard. Live Strong.

@@ -49,14 +49,12 @@ export default function Navbar() {
       >
         <div className="h-full section-padding flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <span className="text-2xl" role="img" aria-label="monkey">🐒</span>
-            <span
-              className="font-display text-xl tracking-wider text-monkey-yellow group-hover:yellow-text-glow transition-all"
-              style={{ fontFamily: "'Anton', sans-serif" }}
-            >
-              MONKEY FITNESS
-            </span>
+          <Link to="/" className="flex items-center group">
+            <img
+              src="/images/logo.png"
+              alt="Monkey Fitness logo"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav Links */}
@@ -77,12 +75,12 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <Link
-            to="/contact"
+          <a
+            href="tel:08040937393"
             className="hidden md:inline-flex btn-primary text-sm py-2.5 px-6 animate-pulse-glow"
           >
-            Join Now
-          </Link>
+            Call Now
+          </a>
 
           {/* Mobile Hamburger */}
           <button
@@ -141,13 +139,13 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                to="/contact"
+              <a
+                href="tel:08040937393"
                 className="btn-primary mt-6 text-center"
                 onClick={() => setIsMobileOpen(false)}
               >
-                Join Now
-              </Link>
+                Call Now
+              </a>
             </div>
           </div>
         </div>
